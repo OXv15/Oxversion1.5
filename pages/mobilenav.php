@@ -1,0 +1,36 @@
+<?php
+nav($att="class='navbar container nav-mobile ox-nav-outset-dark navbar-dark ox-bg-dark fixed-top p-3'");
+			a($att="class='navbar-brand mt-0 text-white text-outset'"); echo "Ox"; _a();
+			button($att="class='navbar-toggler m-2' type='button' data-toggle='collapse' data-target='#oxnavdropdownmobile' aria-controls='oxnavdropdownmobile' aria-expanded='false' aria-label='Toggle navigation'");
+				span($att='class="navbar-toggler-icon"');  _span();
+			_button();
+			div($att='class="collapse navbar-collapse p-3" id="oxnavdropdownmobile"');
+				ul($att='class="navbar-nav mr-auto "');
+					li($att='class="nav-item text-white active"'); a('href="app.php" class="nav-link"');echo "Home"; _a(); _li();
+					li($att='class="nav-item text-white active"'); a('href="pages/hub.php" class="nav-link"');echo "Visit our hub ";i('class="fa fa-home"');_i(); _a(); _li();
+					li($att='class="nav-item"'); 
+						a($att='class="text-dark container-fluid dropdown-toggle btn bg-white" href="http://example.com" id="oxnavdropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"');
+							echo "Get started"; 
+						_a();
+						div($att='class="dropdown-menu p-3 bg-white dropdrown-div" aria-labelledby="oxnavdropdown1"');
+							form($att='class="" method="POST" action="app.php"');
+								input($att='type="submit" name="home" 	value="Home" class="btn container-fluid  p-3"');
+							_form();
+							form($att='class="" method="POST" action="app.php"');
+								input($att='type="submit" name="documentation" 	value="Documentation" class="btn container-fluid  p-3"');
+							_form();
+							form($att='class="" method="POST" action="ox.zip"');
+								input($att='type="submit" name="download" 	value="Download source" class="btn container-fluid  p-3"');
+							_form();
+							form($att='class="" method="POST" action="app.php"');
+								input($att='type="submit" name="contact" 	value="Contact us" class="btn container-fluid  p-3"');
+							_form();
+						_div();
+					_li();
+				_ul();
+				form($att='class="form-inline my-2 my-md-0"');
+					input($att='class="form-control mt-3 container-fluid" type="text" placeholder="Search"');
+				_form();
+			_div();
+		_nav();
+?>

@@ -1,0 +1,23 @@
+//Package file 
+ {
+          "name": "",
+          "version": "",
+          "description": "",
+          "main": "",
+          "directories": {
+            "test": ""
+          },
+          "scripts": {
+            "test": ""
+          },
+          "repository": {
+            "type": "",
+            "url": ""
+          },
+          "author": "",
+          "license": "",
+          "bugs": {
+            "url": ""
+          },
+          "homepage": ""
+        }

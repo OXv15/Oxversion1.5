@@ -1,0 +1,292 @@
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: transparent !important;
+    -webkit-box-shadow: inset 0 0 6px #000 !important;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #000; 
+    background: lightgrey;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: grey;
+    -webkit-box-shadow: inset 0 0 6px #000; 
+}
+/* outsets */
+.ox-text-outset{text-shadow: 0px 1px 10px #000}
+.ox-top-outset{box-shadow: 0px -1.5px 10px #000 !important;}
+.ox-bottom-outset{box-shadow: 0px 1.5px 10px #000 !important;}
+.ox-outset{box-shadow: 0px 0px 10px #000 !important;}
+.ox-nav-outset-dark{
+  border-bottom-right-radius: 30px !important;
+  /*box-shadow: 0.8px  0.8px 0.8px 0.8px #000 !important;*/
+  box-shadow: 0.5px 0.1px 10px #000;
+  /*border-right: 50px solid #000 !important;*/
+  padding-right: 20px !important;
+}
+.ox-nav-outset-dark:after{
+  position: absolute;
+  bottom: 4;
+  right: 4;
+  width: 0;
+  height: 0;
+  color: #11110f;
+  margin-left: -.5rem;
+  content: "";
+  border-right: .0rem solid transparent;
+  border-bottom: .9rem solid;
+  border-left: .9rem solid transparent;
+}
+.ox-top-inset{box-shadow: inset 0px -1.5px 10px #000 !important;}
+.ox-bottom-inset{box-shadow: inset 0px 1.5px 10px #000 !important;}
+.ox-inset{box-shadow: inset 0px 0px 10px #000 !important;}
+/* buttons */
+button:active{
+  box-shadow: inset 0px 0px 15px;
+}
+.ox-btn{
+  box-shadow: 1px 3px 10px #000;
+}
+.ox-btn:active{
+  /* box-shadow: inset 0px 0px 20px #000; */
+}
+  .ox-btn-sm{
+    width: 40%;
+  }
+  .ox-btn-md{
+    width: 75%;
+  }
+  .ox-btn-lg{
+    width: 100%;
+  }
+  .ox-btn-error{
+    background: rgb(177, 8, 8) !important;
+    color: rgba(255, 255, 255, 0.782);
+  border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-error:hover{
+    background: rgb(151, 6, 6);
+    color: rgb(255, 255, 255);
+  }
+  .ox-btn-success{
+    background: rgb(21, 107, 21);
+    color: rgba(255, 255, 255, 0.782);
+    border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-success:hover{
+    background: rgb(18, 90, 18);
+    color: rgba(255, 255, 255);
+  }
+  .ox-btn-warning{background: rgb(247, 203, 28) !important;
+    background: rgb(247, 203, 28) !important;
+    color: rgba(255, 255, 255, 0.782);
+    border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-warning:hover{
+    background: rgb(214, 177, 25);
+    color: rgba(255, 255, 255);
+  }
+  .ox-btn-default{background: rgb(206, 195, 195) !important;
+    background: rgb(206, 195, 195) !important;
+    color: rgba(255, 255, 255, 0.782);
+    border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-default:hover{
+    background: rgb(152, 144, 144);
+    color: rgba(255, 255, 255);
+  }
+  .ox-btn-primary{background: rgb(4, 92, 255) !important;
+    background: rgb(4, 92, 255) !important;
+    color: rgba(255, 255, 255, 0.782);
+    border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-primary:hover{
+    background: rgb(3, 67, 186);
+    color: rgba(255, 255, 255);
+  }
+  .ox-btn-secondary{background:#bd17ff !important;
+    background:#bd17ff !important;
+    color: rgba(255, 255, 255, 0.782);
+    border-style: none;
+  padding: 10px;
+  border-radius: 10%;
+  }
+  .ox-btn-secondary:hover{
+    background:#9414c7;
+    color: rgba(255, 255, 255);
+  }
+  .ox-btn-outset{
+    box-shadow: 0px 4px 10px #000 !important;
+  }
+/* ###### */
+
+/*  INPUTS  */
+  .ox-form{
+    padding: 10px;
+    border-radius: 2px;
+    border: 0.6px solid #000;
+  }
+//* ###### */
+
+/*  ALIGNING and STYLING  */
+.ox-left{
+  -ms-flex-pack:start!important;justify-content:flex-start!important;
+}
+.ox-right{
+  -ms-flex-pack:end!important;justify-content:flex-end!important;
+}
+.ox-center{
+  -ms-flex-pack:center!important;justify-content:center!important;
+}
+
+.ox-text-left{
+  text-align: left
+}
+.ox-text-right{
+  text-align: right;
+}
+.ox-text-center{
+  text-align: center;
+}
+.ox-div-sm{
+  width: 50%;
+}
+.ox-div-md{
+  width: 75%;
+}
+.ox-div-lg{
+  width: 100%;
+}
+.ox-bg-dark{
+  background: #272822 !important;
+}
+.ox-bg-light{
+  background: rgb(238, 238, 238) !important;
+}
+.ox-bg-error{
+    background: rgb(177, 8, 8) !important;
+  }
+.ox-bg-primary{background: rgb(4, 92, 255) !important;}
+.ox-bg-secondary{background:#bd17ff !important;}
+.ox-bg-default{background: rgb(206, 195, 195) !important;}
+.ox-bg-warning{background: rgb(247, 203, 28) !important;}
+.ox-text-white{color: #fff !important;}
+.ox-text-dark{color: rgb(44, 44, 44) !important;}
+.ox-text-primary{background: rgb(4, 92, 255) !important;color: rgb(44, 44, 44) !important;}
+.ox-text-seconday{color: rgb(44, 44, 44) !important;}
+.ox-text-default{background: rgb(206, 195, 195) !important;color: rgb(44, 44, 44) !important;}
+.ox-text-warning{background: rgb(247, 203, 28) !important;}
+/* ################ */
+.ox-p-1{ padding: 5px}
+.ox-p-2{ padding: 10px}
+.ox-p-3{ padding: 15px}
+.ox-p-4{ padding: 20px}
+.ox-p-5{ padding: 25px}
+
+.ox-pt-1{ padding-top: 5px}
+.ox-pt-2{ padding-top: 10px}
+.ox-pt-3{ padding-top: 15px}
+.ox-pt-4{ padding-top: 20px}
+.ox-pt-5{ padding-top: 25px}
+
+.ox-pb-1{ padding-bottom: 5px}
+.ox-pb-2{ padding-bottom: 10px}
+.ox-pb-3{ padding-bottom: 15px}
+.ox-pb-4{ padding-bottom: 20px}
+.ox-pb-5{ padding-bottom: 25px}
+
+.ox-pl-1{ padding-left: 5px}
+.ox-pl-2{ padding-left: 10px}
+.ox-pl-3{ padding-left: 15px}
+.ox-pl-4{ padding-left: 20px}
+.ox-pl-5{ padding-left: 25px}
+
+.ox-pr-1{ padding-right: 5px}
+.ox-pr-2{ padding-right: 10px}
+.ox-pr-3{ padding-right: 15px}
+.ox-pr-4{ padding-right: 20px}
+.ox-pr-5{ padding-right: 25px}
+
+
+.ox-m-1{ margin: 5px}
+.ox-m-2{ margin: 10px}
+.ox-m-3{ margin: 15px}
+.ox-m-4{ margin: 20px}
+.ox-m-5{ margin: 25px}
+
+.ox-mt-1{ margin-top: 5px}
+.ox-mt-2{ margin-top: 10px}
+.ox-mt-3{ margin-top: 15px}
+.ox-mt-4{ margin-top: 20px}
+.ox-mt-5{ margin-top: 25px}
+
+.ox-mb-1{ margin-bottom: 5px}
+.ox-mb-2{ margin-bottom: 10px}
+.ox-mb-3{ margin-bottom: 15px}
+.ox-mb-4{ margin-bottom: 20px}
+.ox-mb-5{ margin-bottom: 25px}
+
+.ox-ml-1{ margin-left: 5px}
+.ox-ml-2{ margin-left: 10px}
+.ox-ml-3{ margin-left: 15px}
+.ox-ml-4{ margin-left: 20px}
+.ox-ml-5{ margin-left: 25px}
+
+.ox-mr-1{ margin-right: 5px}
+.ox-mr-2{ margin-right: 10px}
+.ox-mr-3{ margin-right: 15px}
+.ox-mr-4{ margin-right: 20px}
+.ox-mr-5{ margin-right: 25px}
+/* ###### */
+
+/* NAVBARS */
+.ox-navbar{
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  padding: 0.5px;
+}
+.ox-navbar:after{
+  /* position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  color: 0.5px 0.5px 15px #000;
+  margin-left: -.5rem;
+  content: "";
+  border-right: .0rem solid transparent;
+  border-bottom: .9rem solid;
+  border-left: .9rem solid transparent; */
+}
+.ov-nav-item{
+  list-style: none
+}
+.ox-nav-link{
+  display: inline;
+  list-style: none;
+  margin: 5px;
+}
+.ox-nav-link a{
+  color: #000;
+  text-decoration: none !important;
+}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto
+{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}
+.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+.col-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
+.col-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
